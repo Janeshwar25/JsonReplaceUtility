@@ -1,1 +1,1 @@
-Get-ChildItem "C:\Users\jchowdha\Desktop\Accelq_Janesh\ACCELQAgent\AgentInstances\agent\user_data" -Recurse -File
+Invoke-RestMethod -Uri "http://127.0.0.1:5000/run-member-validator" -Method POST -ContentType "application/json" -Body "{}" | ConvertTo-Json -Depth 10
