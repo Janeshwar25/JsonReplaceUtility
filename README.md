@@ -1,1 +1,1 @@
-Invoke-RestMethod -Uri "http://127.0.0.1:5000/run-member-validator" -Method POST -ContentType "application/json" -Body "{}"
+Get-Item "C:\Users\jchowdha\Desktop\Accelq_Janesh\ACCELQAgent\AgentInstances\agent\user_data" | Format-List Name,FullName,Length,Attributes
