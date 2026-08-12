@@ -1,6 +1,1 @@
-@echo off
-cd /d "%~dp0"
-
-"C:\Program Files\Python314\python.exe" validator_api.py
-
-pause
+Invoke-RestMethod -Uri "http://127.0.0.1:5000/run-member-validator" -Method POST -ContentType "application/json" -Body "{}" | ConvertTo-Json -Depth 10
