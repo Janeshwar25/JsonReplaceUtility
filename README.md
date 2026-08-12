@@ -1,1 +1,1 @@
-Get-ChildItem "C:\Users\jchowdha\Desktop\AccelQ_AI_Framework\config" -Force
+Get-ChildItem "C:\Users\jchowdha" -Recurse -File -Filter "config.py" -ErrorAction SilentlyContinue
