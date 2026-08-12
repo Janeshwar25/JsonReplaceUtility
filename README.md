@@ -1,1 +1,1 @@
-Get-ChildItem "C:\Users\jchowdha\Desktop\Accelq_Janesh\ACCELQAgent\AgentInstances\agent\user_data" -File
+Get-ChildItem "C:\Users\jchowdha\Desktop\Accelq_Janesh\ACCELQAgent\AgentInstances\agent\user_data" -Recurse -File
