@@ -1,1 +1,1 @@
-cd "C:\Users\jchowdha\Desktop\AccelQ_AI_Framework\scripts"
+PS C:\Users\jchowdha\Desktop\AccelQ_AI_Framework\scripts>
