@@ -1,2 +1,1 @@
-
-cd "C:\Users\jchowdha\Desktop\AccelQ_AI_Framework"
+python -c "import config; print(config.MASTER_DBS)"
