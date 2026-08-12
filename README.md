@@ -1,1 +1,1 @@
-Get-ChildItem "C:\Users\jchowdha\Desktop\AccelQ_AI_Framework\config" -Recurse
+Get-ChildItem "C:\Users\jchowdha\Desktop\AccelQ_AI_Framework\config" -Force
