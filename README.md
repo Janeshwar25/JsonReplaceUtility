@@ -1,11 +1,9 @@
-@echo off
-cd /d "C:\Users\jchowdha\Downloads\JsonReplaceUtility_ACCELQ_Flask_v1\JsonReplaceUtility_Sprint18_ACCELQ_Ready"
-
-python validator_api.py
+Invoke-RestMethod -Uri "http://127.0.0.1:5000/run-member-validator" -Method POST -ContentType "application/json" -Body "{}" | ConvertTo-Json -Depth 10
 
 
 
-start_validator_api.bat
 
 
-.\start_validator_api.bat
+Get-ChildItem "C:\Users\jchowdha\Desktop\AccelQ_AI_Framework" -Recurse -File |
+Where-Object { $_.Name -match "member_validation|\.xlsx$" } |
+Select-Object FullName, LastWriteTime
