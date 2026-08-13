@@ -1,1 +1,2 @@
-"%TEMP%\GoogleCloudSDKInstaller.exe"
+
+gcloud config get-value project
