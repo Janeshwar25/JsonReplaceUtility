@@ -1,1 +1,1 @@
-python -c "import config; print(config.__file__)"
+python -c "import config; print(config)"
