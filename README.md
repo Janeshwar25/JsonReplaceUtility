@@ -1,1 +1,1 @@
-$env:PYTHONPATH="C:\Users\jchowdha\Desktop\AccelQ_AI_Framework"
+python -c "import config; print(config.__file__)"
