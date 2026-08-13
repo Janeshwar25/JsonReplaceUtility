@@ -1,2 +1,1 @@
-cd "C:\Users\jchowdha\Desktop\AccelQ_AI_Framework\scripts"
-python validator_api.py
+Invoke-RestMethod -Uri "http://127.0.0.1:5000/run-member-validator" -Method POST -ContentType "application/json" -Body "{}" | ConvertTo-Json -Depth 10
