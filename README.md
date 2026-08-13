@@ -1,1 +1,1 @@
-https://teams.microsoft.com/l/meetup-join/19%3ameeting_OTVjMWFhYzYtODc3MC00YjllLWE3ZjgtYWRhNmRhMDlkMzQ2%40thread.v2/0?context=%7b%22Tid%22%3a%22d68fa0a0-f757-4f50-8afb-8ad6a173f358%22%2c%22Oid%22%3a%22de45123b-b75f-4cc4-b8a2-05a234f1a40a%22%7d
+Invoke-RestMethod -Uri "http://127.0.0.1:5000/run-member-validator" -Method POST -ContentType "application/json" -Body "{}" | ConvertTo-Json -Depth 10
