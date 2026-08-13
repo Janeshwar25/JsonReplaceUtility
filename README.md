@@ -6,3 +6,6 @@ python validator_api.py
 
 
 start_validator_api.bat
+
+
+.\start_validator_api.bat
