@@ -1,5 +1,1 @@
-Invoke-RestMethod `
-  -Uri "http://127.0.0.1:5000/run-json-replace" `
-  -Method POST `
-  -ContentType "application/json" `
-  -Body "{}"
+& "C:\Users\jchowdha\Downloads\JsonReplaceUtility_ACCELQ_Flask_v1\JsonReplaceUtility_Sprint18_ACCELQ_Ready\run_utility.bat"
