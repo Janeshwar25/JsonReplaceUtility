@@ -1,1 +1,1 @@
-python -c "import config; print(config)"
+python -c "import config; print(config.MASTER_DBS)"
