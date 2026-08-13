@@ -1,6 +1,4 @@
-C:\Users\jchowdha\Downloads\JsonReplaceUtility_ACCELQ_Flask_v1\JsonReplaceUtility_Sprint18_ACCELQ_Ready\run_utility.bat
+@echo off
+cd /d "C:\Users\jchowdha\Downloads\JsonReplaceUtility_ACCELQ_Flask_v1\JsonReplaceUtility_Sprint18_ACCELQ_Ready"
 
-
-
-
-C:\Users\jchowdha\Downloads\JsonReplaceUtility_ACCELQ_Flask_v1\JsonReplaceUtility_Sprint18_ACCELQ_Ready
+python validator_api.py
