@@ -1,1 +1,1 @@
-cd "C:\Users\jchowdha\Desktop\AccelQ_AI_Framework"
+$env:PYTHONPATH="C:\Users\jchowdha\Desktop\AccelQ_AI_Framework"
