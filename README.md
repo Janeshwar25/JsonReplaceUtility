@@ -1,5 +1,12 @@
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
-
-cd "C:\Users\jchowdha\Desktop\AccelQ_AI_Framework\scripts"
-python group_validator.py
+SELECT 
+    TABLE_NAME,
+    COLUMN_NAME,
+    ORDINAL_POSITION,
+    COLUMN_DEFAULT,
+    IS_NULLABLE,
+    DATA_TYPE,
+    COLUMN_TYPE,
+    COLUMN_KEY
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_SCHEMA = DATABASE()
+ORDER BY TABLE_NAME, ORDINAL_POSITION;
