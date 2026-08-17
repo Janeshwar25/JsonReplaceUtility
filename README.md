@@ -4,9 +4,8 @@ SELECT
     medicalPlanCode,
     rxPlanID,
     rxPlanCode,
-    rxPlanExtID
+    rxPlanExtID,
+    effectiveDate,
+    expirationDate
 FROM rso_01.rxplanxref
-WHERE medicalPlanCode LIKE '%P2000%'
-   OR medicalPlanCode LIKE '%8027%'
-   OR medicalPlanCode LIKE '%456119%'
-   OR rxPlanCode LIKE '%ADVB%';
+WHERE medicalPlanCode LIKE '%456119%';
