@@ -10,3 +10,20 @@ SELECT
 FROM rso_01.rxplanxref
 WHERE medicalPlanCode = 'DBS_Flex Focus P2000i8027_456119'
   AND rxPlanCode = 'RX7 ADVB';
+
+
+
+
+
+
+
+
+SELECT
+    medicalPlanID AS PlanID,
+    medicalPlanCode,
+    rxPlanID,
+    rxPlanCode,
+    rxPlanExtID
+FROM rso_01.rxplanxref
+WHERE medicalPlanCode = 'DBS_Flex Focus P2000i8027_456119'
+  AND rxPlanCode = 'RX7 ADVB';
