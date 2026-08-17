@@ -1,12 +1,12 @@
 SELECT
-    bp.planID,
-    bp.planName,
-    bp.allStateInd,
-    be.externalPlanID,
-    be.beneExternalID,
-    be.externalIDEffDate,
-    be.externalIDExpDate
-FROM rso_01.benefitplan bp
-LEFT JOIN rso_01.beneexternalid be
-    ON be.benefitPlanVersionID = bp.benefitPlanVersionID
-WHERE bp.planID = 'MNS0100347';
+    rxPlanXrefID,
+    medicalPlanID,
+    medicalPlanCode,
+    rxPlanID,
+    rxPlanCode,
+    rxPlanExtID,
+    effectiveDate,
+    expirationDate
+FROM rso_01.rxplanxref
+WHERE medicalPlanCode = 'DBS_Flex Focus P2000i8027_456119'
+  AND rxPlanCode = 'RX7 ADVB';
