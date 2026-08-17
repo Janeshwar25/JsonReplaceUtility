@@ -1,1 +1,12 @@
-Invoke-RestMethod -Uri "http://127.0.0.1:5000/run-group-validator" -Method POST -ContentType "application/json" -Body "{}" | ConvertTo-Json -Depth 10
+SELECT
+    bp.planID,
+    bp.planName,
+    bp.allStateInd,
+    be.externalPlanID,
+    be.beneExternalID,
+    be.externalIDEffDate,
+    be.externalIDExpDate
+FROM rso_01.benefitplan bp
+LEFT JOIN rso_01.beneexternalid be
+    ON be.benefitPlanVersionID = bp.benefitPlanVersionID
+WHERE bp.planID = 'MNS0100347';
