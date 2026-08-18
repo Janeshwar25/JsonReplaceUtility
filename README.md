@@ -1,10 +1,5 @@
 SELECT
-    zip,
-    city,
-    countyName,
-    countyFIPS,
-    state,
-    stateName
-FROM rso_01.zipcode
-WHERE state = 'CA'
-ORDER BY zip;
+    medicalPlanCode AS External_ID,
+    medicalPlanID   AS Medical_Plan_ID
+FROM rso_01.rxplanxref
+WHERE medicalPlanCode = 'NexOAPoi10024B';
