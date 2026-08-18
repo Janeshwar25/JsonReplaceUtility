@@ -10,3 +10,16 @@ FROM rso_01.beneexternalid be
 JOIN rso_01.benefitplan bp
     ON bp.benefitPlanVersionID = be.benefitPlanVersionID
 WHERE be.externalPlanID = 'NexOAPoi10024B';
+
+
+
+
+
+
+SELECT DISTINCT
+    medicalPlanID AS Medical_Plan_ID,
+    rxPlanID      AS RX_Plan_ID,
+    rxPlanCode    AS RX_Plan_Code,
+    rxPlanExtID   AS RX_External_ID
+FROM rso_01.rxplanxref
+WHERE medicalPlanID = 'M010003574';
