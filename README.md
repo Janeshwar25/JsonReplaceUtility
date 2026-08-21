@@ -12,7 +12,16 @@ JOIN rso_01.benefitplan bp
 WHERE be.externalPlanID = 'NexOAPoi10024B';
 
 
-
+SELECT
+    zip,
+    city,
+    countyName,
+    countyFIPS,
+    state,
+    stateName
+FROM rso_01.zipcode
+WHERE state = 'CA'
+ORDER BY zip;
 
 
 
