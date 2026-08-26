@@ -1,28 +1,23 @@
+
 SELECT DISTINCT
     bp.planID AS Medical_Plan_ID,
-    ps.carrierID AS Carrier_ID,
-    c.carrierName AS Carrier_Name,
-    c.businessURL,
-    c.natlProviderID,
-    c.parentID,
-    c.alphaParentID,
-    c.childInd,
-    c.hmoInd,
-    c.adminResponsibleInd,
-    c.carrierBusinessID
+    bp.planVersion,
+    bns.networkScheduleID,
+    nsh.networkScheduleDesc,
+    bns.serviceAreaID,
+    bns.beneNetworkSchedEffDate,
+    bns.beneNetworkSchedExpDate
 FROM rso_01.benefitplan bp
-JOIN rso_01.productsearchview ps
-    ON ps.productVersionID = bp.productVersionID
-LEFT JOIN rso_01.carrier c
-    ON c.carrierID = ps.carrierID
-WHERE bp.planID = 'M010003574';
-
-
-
-
-
-python -c "import mysql.connector; c=mysql.connector.connect(host='172.19.96.26', database='errq01', user='YOUR_USER', password='YOUR_PASSWORD', port=3306); print('DB CONNECTED:', c.is_connected()); c.close()"
-
+JOIN rso_01.benenetworksched bns
+    ON bns.benefitPlanVersionID = bp.benefitPlanVersionID
+LEFT JOIN rso_01.netscheduleheader nsh
+    ON nsh.networkScheduleID = bns.networkScheduleID
+WHERE bp.planID IN (
+    'M010003574',
+    'M010009228',
+    'M010000273'
+)
+ORDER BY bp.planID, bp.planVersion, bns.beneNetworkSchedEffDate;
 
 
 
