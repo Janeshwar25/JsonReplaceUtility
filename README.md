@@ -1,4 +1,27 @@
 
+python "%~dp0replace_json.py" %*
+set "EXITCODE=%ERRORLEVEL%"
+
+copy /Y "%~dp0updated.json" "C:\Users\jchowdha\ACCELQAgent_1\AgentInstances\agent\user_data\updated.json"
+
+echo.
+if "%EXITCODE%"=="0" (
+    echo SUCCESS - Utility completed.
+) else (
+    echo FAILED - Exit code %EXITCODE%.
+)
+echo.
+
+endlocal & exit /b %EXITCODE%
+
+
+
+
+
+
+
+
+
 SELECT DISTINCT
     bp.planID AS Medical_Plan_ID,
     bp.planVersion,
