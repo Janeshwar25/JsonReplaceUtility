@@ -1,3 +1,7 @@
+Invoke-RestMethod -Uri "http://127.0.0.1:5000/run-group-validator" -Method POST -ContentType "application/json" -Body '{"group_ids":["3118035"]}'
+
+
+
 
 python "%~dp0replace_json.py" %*
 set "EXITCODE=%ERRORLEVEL%"
