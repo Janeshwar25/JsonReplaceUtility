@@ -1,3 +1,10 @@
+Get-ChildItem "C:\Users\paggarwa" -Recurse -Filter "AccelQ_Input_Output_File.xlsx" -ErrorAction SilentlyContinue | Select-Object FullName
+
+
+
+
+
+
 Invoke-RestMethod -Uri "http://127.0.0.1:5000/run-group-validator" -Method POST -ContentType "application/json" -Body '{"group_ids":["3118035"]}'
 
 
