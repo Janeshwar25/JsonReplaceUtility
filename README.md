@@ -1,3 +1,6 @@
+Test-NetConnection 172.19.96.239 -Port 3306
+
+
 
 python -c "import mysql.connector; c=mysql.connector.connect(host='172.19.96.239',port=3306,database='tent01',user='YOUR_USER',password='YOUR_PASSWORD'); print('DB CONNECTED'); c.close()"
 
