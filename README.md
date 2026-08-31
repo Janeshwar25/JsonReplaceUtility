@@ -1,3 +1,10 @@
+
+python -c "import mysql.connector; c=mysql.connector.connect(host='172.19.96.239',port=3306,database='tent01',user='YOUR_USER',password='YOUR_PASSWORD'); print('DB CONNECTED'); c.close()"
+
+
+
+
+
 Get-ChildItem "C:\Users\paggarwa" -Recurse -Filter "AccelQ_Input_Output_File.xlsx" -ErrorAction SilentlyContinue | Select-Object FullName
 
 
