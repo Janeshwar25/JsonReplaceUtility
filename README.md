@@ -1,3 +1,34 @@
+SET SESSION group_concat_max_len = 10000000;
+
+SELECT @@group_concat_max_len;
+
+SELECT GROUP_CONCAT(
+    CONCAT(
+        'SELECT ''', TABLE_NAME, ''' AS sourceTable, ',
+        '''', COLUMN_NAME, ''' AS sourceColumn, ',
+        'CAST(`', COLUMN_NAME, '` AS CHAR) AS value ',
+        'FROM `rso_01`.`', TABLE_NAME, '` ',
+        'WHERE CAST(`', COLUMN_NAME, '` AS CHAR) LIKE ''%MNS0301833%'''
+    )
+    SEPARATOR ' UNION ALL '
+)
+INTO @sql
+FROM information_schema.COLUMNS
+WHERE TABLE_SCHEMA = 'rso_01'
+  AND COLUMN_NAME IN ('planID', 'externalPlanID');
+
+
+SELECT LENGTH(@sql) AS sql_length;
+
+
+PREPARE stmt FROM @sql;
+EXECUTE stmt;
+DEALLOCATE PREPARE stmt;
+  
+
+
+
+
 SELECT TABLE_NAME, COLUMN_NAME
 FROM information_schema.COLUMNS
 WHERE TABLE_SCHEMA = 'rso_01'
