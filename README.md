@@ -1,3 +1,15 @@
+SELECT COLUMN_NAME
+FROM information_schema.COLUMNS
+WHERE TABLE_SCHEMA = 'membergroup'
+  AND TABLE_NAME = 'memgroup'
+  AND (
+      COLUMN_NAME LIKE '%date%'
+      OR COLUMN_NAME LIKE '%created%'
+      OR COLUMN_NAME LIKE '%create%'
+  );
+
+
+
 
 SELECT *
 FROM membergroup.memgroup
