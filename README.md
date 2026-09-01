@@ -1,6 +1,13 @@
 SELECT DISTINCT
     memGroupID,
     planID
+FROM rso_01.capadj
+WHERE planID = 'MNS0301833';
+
+
+SELECT DISTINCT
+    memGroupID,
+    planID
 FROM rso_01.benefitplansearchview
 WHERE planID = 'MNS0301833';
 
