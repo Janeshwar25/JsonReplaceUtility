@@ -1,3 +1,11 @@
+SELECT memGroupID, memGroupName, changeDateTime, changeUserID
+FROM membergroup.memgroup
+WHERE memGroupID = 123456;
+
+
+
+
+
 Test-NetConnection 172.19.96.239 -Port 3306
 
 
