@@ -1,3 +1,10 @@
+
+SELECT DISTINCT planID
+FROM membergroup.memgroupcontractplanoption
+WHERE planID = 'MNS0301833';
+
+
+
 SELECT DISTINCT
     m.memGroupID,
     m.memGroupName
