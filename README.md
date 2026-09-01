@@ -1,3 +1,11 @@
+SELECT DISTINCT
+    memGroupID,
+    planID
+FROM rso_01.benefitplansearchview
+WHERE planID = 'MNS0301833';
+
+
+
 SELECT TABLE_NAME
 FROM information_schema.COLUMNS
 WHERE TABLE_SCHEMA = 'rso_01'
