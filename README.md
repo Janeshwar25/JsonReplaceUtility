@@ -1,3 +1,12 @@
+SELECT TABLE_NAME, COLUMN_NAME
+FROM information_schema.COLUMNS
+WHERE TABLE_SCHEMA = 'rso_01'
+  AND COLUMN_NAME IN ('planID', 'externalPlanID')
+ORDER BY COLUMN_NAME, TABLE_NAME;
+
+
+
+
 SELECT @@group_concat_max_len AS max_len,
        LENGTH(@sql) AS sql_length;
 
