@@ -1,3 +1,10 @@
+
+SELECT *
+FROM membergroup.memgroup
+WHERE memGroupName LIKE '%INSTALLONLY%'
+  AND DATE(createDateTime) = '2026-07-01';
+
+
 SELECT COLUMN_NAME
 FROM information_schema.COLUMNS
 WHERE TABLE_SCHEMA = 'membergroup'
