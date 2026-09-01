@@ -1,3 +1,14 @@
+SELECT DISTINCT
+    memGroupID,
+    planID
+FROM membergroup.memgroupcontractplanoption
+WHERE planID = 'MNS0301833'
+ORDER BY memGroupID;
+
+
+
+
+
 SELECT *
 FROM membergroup.memgroupcontractplanoption
 WHERE planID = 'MNS0301833';
