@@ -1,3 +1,75 @@
+
+SELECT DISTINCT
+    mg.memGroupID,
+    mg.memGroupName,
+    mg.createDateTime
+FROM membergroup.memgroup mg
+JOIN (
+    SELECT memGroupID
+    FROM rso_01.benefitplan
+    WHERE planID = 'MNS0301833' AND memGroupID <> 0
+
+    UNION
+
+    SELECT memGroupID
+    FROM rso_01.benefitplansearchview
+    WHERE planID = 'MNS0301833' AND memGroupID <> 0
+
+    UNION
+
+    SELECT memGroupID
+    FROM rso_01.capadj
+    WHERE planID = 'MNS0301833' AND memGroupID <> 0
+
+    UNION
+
+    SELECT memGroupID
+    FROM rso_01.caprunattribset
+    WHERE planID = 'MNS0301833' AND memGroupID <> 0
+
+    UNION
+
+    SELECT memGroupID
+    FROM rso_01.caprunmem
+    WHERE planID = 'MNS0301833' AND memGroupID <> 0
+
+    UNION
+
+    SELECT memGroupID
+    FROM rso_01.caprunmemdetailcapview
+    WHERE planID = 'MNS0301833' AND memGroupID <> 0
+
+    UNION
+
+    SELECT memGroupID
+    FROM rso_01.claimcapdeduct
+    WHERE planID = 'MNS0301833' AND memGroupID <> 0
+
+    UNION
+
+    SELECT memGroupID
+    FROM rso_01.memacctchangelog
+    WHERE planID = 'MNS0301833' AND memGroupID <> 0
+
+    UNION
+
+    SELECT memGroupID
+    FROM rso_01.memacctchangelogfp
+    WHERE planID = 'MNS0301833' AND memGroupID <> 0
+) x
+ON mg.memGroupID = x.memGroupID
+ORDER BY mg.createDateTime;
+
+
+
+
+
+
+
+
+
+
+
 SELECT 'benefitplan' AS sourceTable, memGroupID, planID
 FROM rso_01.benefitplan
 WHERE planID = 'MNS0301833'
