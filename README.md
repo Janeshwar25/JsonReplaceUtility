@@ -1,3 +1,15 @@
+SELECT
+    TABLE_NAME,
+    GROUP_CONCAT(COLUMN_NAME ORDER BY COLUMN_NAME) AS columns_found
+FROM information_schema.COLUMNS
+WHERE TABLE_SCHEMA = 'rso_01'
+  AND COLUMN_NAME IN ('planID', 'memGroupID', 'owningMemGroupID')
+GROUP BY TABLE_NAME
+ORDER BY TABLE_NAME;
+
+
+
+
 
 SELECT DISTINCT
     mg.memGroupID,
