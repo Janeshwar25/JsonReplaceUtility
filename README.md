@@ -1,3 +1,17 @@
+
+SELECT DISTINCT
+    p.memGroupID,
+    mg.memGroupName,
+    p.planID
+FROM membergroup.memgroupcontractplanoption p
+LEFT JOIN membergroup.memgroup mg
+    ON mg.memGroupID = p.memGroupID
+WHERE p.planID = 'MNS0301833'
+ORDER BY p.memGroupID;
+
+
+
+
 SELECT DISTINCT
     memGroupID,
     planID
