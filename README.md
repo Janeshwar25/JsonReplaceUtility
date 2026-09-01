@@ -1,3 +1,14 @@
+SELECT TABLE_NAME, COLUMN_NAME
+FROM information_schema.COLUMNS
+WHERE TABLE_SCHEMA = 'membergroup'
+  AND (COLUMN_NAME LIKE '%plan%'
+       OR COLUMN_NAME LIKE '%memGroup%')
+ORDER BY TABLE_NAME, COLUMN_NAME;
+
+
+
+
+
 SELECT DISTINCT planID
 FROM membergroup.memgroupcontractplanoption
 WHERE planID LIKE '%MNS0301833%';
