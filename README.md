@@ -1,3 +1,139 @@
+TABLE_NAME	COLUMN_NAME
+beneauditdetail	planID
+benebundleoptriderplanassignvw	planID
+benebundleriderplansettingsvw	planID
+benefactorschedplan	planID
+benefitbundleccbypassgroupview	planID
+benefitbundleccbypassplan	planID
+benefitbundleccbypassplanview	planID
+benefitbundleccdedgroupview	planID
+benefitbundleccdedplan	planID
+benefitbundleccdedplanview	planID
+benefitbundleccmaxgroupview	planID
+benefitbundleccmaxplan	planID
+benefitbundleccmaxplanview	planID
+benefitbundleccoopgroupview	planID
+benefitbundleccoopplan	planID
+benefitbundleccoopplanview	planID
+benefitbundleoptbenecocview	planID
+benefitbundleoptionplanview	planID
+benefitbundleoptionriderplanvw	planID
+benefitbundleoptionsearchview	planID
+benefitbundleoptplanassignedvw	planID
+benefitbundleoptriderplancdvw	planID
+benefitbundleplan	planID
+benefitbundleplansearchview	planID
+benefitbundleriderplan	planID
+benefitfactoruplderror	planID
+benefitfactorupldstage	planID
+benefitplan	memGroupID
+benefitplan	planID
+benefitplanaccumbypassview	planID
+benefitplanarchive	planID
+benefitplancoinsview	planID
+benefitplancopayview	planID
+benefitplancssetoverrideview	planID
+benefitplandeductibleview	planID
+benefitplanextractviewv4	planID
+benefitplanmaxview	planID
+benefitplanoverrideview	planID
+benefitplansearchview	memGroupID
+benefitplansearchview	planID
+benefitplanstoplossoopview	planID
+benefitproductoprxextvw	planID
+benefittiernetworkview	planID
+beneplanmassversion	planID
+beneplansettingsbeneplanview	planID
+beneplantierview	planID
+benetiernetworkprovview	planID
+bundleoptionmassupdateview	planID
+bundleoptionmatchview	planID
+bundleoptionmatchvw	planID
+bundleoptionplanview	planID
+capadj	memGroupID
+capadj	planID
+caprunattribset	memGroupID
+caprunattribset	planID
+caprunmem	memGroupID
+caprunmem	planID
+caprunmemdetailcapview	memGroupID
+caprunmemdetailcapview	planID
+carrierlineofbusinessplanview	planID
+carrierlobplan	planID
+carrierlobplanooncarrierlobvw	planID
+claimcapdeduct	memGroupID
+claimcapdeduct	planID
+claimeditsummary	memGroupID
+claimqueueglobalview	memGroupID
+contractmgschedmembergroup	memGroupID
+dataseccarprodmguserlocview	memGroupID
+datasecmembergroupuserlocview	memGroupID
+datasecuritycarrierproductmg	memGroupID
+datasecuritymembergroup	memGroupID
+deleteutilityerrorqueue	memGroupID
+finerrorcontracttagging	memGroupID
+finerrorcontracttagqueueview	memGroupID
+finprotectionplan	memGroupID
+genericexpenseintake	memGroupID
+globalactiveclaimqueue	memGroupID
+globalactiveclaimqueueview	memGroupID
+globalclaimqueuedashboardview	memGroupID
+globalclaimqueuedashsumview	memGroupID
+joinbeneexternalid	planID
+joinbeneplancocyear	planID
+memacctchangelog	memGroupID
+memacctchangelog	planID
+memacctchangelogfp	memGroupID
+memacctchangelogfp	planID
+memacctrunfpdtl	memGroupID
+memacctrunv3dtl	memGroupID
+membenebundlesearchview	planID
+memgroupcontractlobplanview	planID
+memgroupcontractlobproductview	planID
+memgroupcontractplanoptaddr	memGroupID
+memgroupcontractplanoptphone	memGroupID
+memgrouprefreshstaging	memGroupID
+msa	memGroupID
+netcontractcapclasssysadjmg	memGroupID
+netcontractcapclasssysadjplan	planID
+netcontracthdrcappayeesysadjmg	memGroupID
+netcontracthdrcappayeesysadjpn	planID
+netcontractmembergroup	memGroupID
+netcontractplan	planID
+netdirsuppress	planID
+optionmassupdatesearchview	planID
+prodbennetworkschedview	planID
+provcontractplan	planID
+provcontractplanax	planID
+provdirsuppress	planID
+qjoinqueueroleall	memGroupID
+queuememgroup	memGroupID
+queueroleallfilterview	memGroupID
+queuerolewithfiltersview	memGroupID
+retroruninintakeheader	memGroupID
+riskconfigurationpayeesysadjmg	memGroupID
+riskconfigurationpayeesysadjpn	planID
+rxplanxrefriderplan	planID
+rxpricingset	memGroupID
+serviceplan	memGroupID
+tmpbenemaxremediation	planID
+tradingpartnerbenefitplanview	planID
+utilizationplan	memGroupID
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 SELECT TABLE_NAME, COLUMN_NAME
 FROM information_schema.COLUMNS
 WHERE TABLE_SCHEMA = 'rso_01'
