@@ -1,3 +1,12 @@
+
+SELECT *
+FROM membergroup.memgroup
+WHERE memGroupName LIKE '%INSTALLONLY%'
+  AND MONTH(creationDate) = 7
+  AND DAY(creationDate) = 1;
+
+
+
 SELECT *
 FROM membergroup.memgroup
 WHERE memGroupName LIKE '%INSTALLONLY%'
