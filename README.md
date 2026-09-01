@@ -1,3 +1,10 @@
+SELECT DISTINCT
+    memGroupID,
+    planID
+FROM rso_01.caprunnemetailcapview
+WHERE planID = 'MNS0301833';
+
+
 
 SELECT DISTINCT
     memGroupID,
