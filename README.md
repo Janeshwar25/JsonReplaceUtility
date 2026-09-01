@@ -1,3 +1,41 @@
+SELECT 'joinbeneexternalid' AS sourceTable,
+       planID,
+       benefitPlanVersionID,
+       externalPlanID
+FROM rso_01.joinbeneexternalid
+WHERE externalPlanID = 'MNS0301833';
+
+UNION ALL
+
+SELECT 'benefitplanextractviewv4' AS sourceTable,
+       planID,
+       benefitPlanVersionID,
+       externalPlanID
+FROM rso_01.benefitplanextractviewv4
+WHERE externalPlanID = 'MNS0301833';
+
+UNION ALL
+
+SELECT 'memgroupphmiputilplanextractvw' AS sourceTable,
+       utilizationPlanID AS planID,
+       NULL AS benefitPlanVersionID,
+       externalPlanID
+FROM rso_01.memgroupphmiputilplanextractvw
+WHERE externalPlanID = 'MNS0301833';
+
+UNION ALL
+
+SELECT 'netcontractplan' AS sourceTable,
+       planID,
+       NULL AS benefitPlanVersionID,
+       externalPlanID
+FROM rso_01.netcontractplan
+WHERE externalPlanID = 'MNS0301833';
+
+
+
+
+
 
 SELECT DISTINCT
     p.memGroupID,
