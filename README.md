@@ -1,3 +1,17 @@
+SELECT DISTINCT
+    m.memGroupID,
+    m.memGroupName
+FROM membergroup.memgroupcontractplanoption p
+JOIN membergroup.memgroup m
+    ON m.memGroupID = p.memGroupID
+WHERE p.planID = 'MNS0301833'
+ORDER BY m.memGroupID;
+
+
+
+
+
+
 SELECT memGroupID, memGroupName, changeDateTime, changeUserID
 FROM membergroup.memgroup
 WHERE memGroupID = 123456;
