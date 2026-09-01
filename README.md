@@ -1,6 +1,14 @@
 SELECT DISTINCT
     memGroupID,
     planID
+FROM membergroup.memgroupcontractplanoptv2view
+WHERE planID LIKE '%MNS0301833%';
+
+
+
+SELECT DISTINCT
+    memGroupID,
+    planID
 FROM membergroup.memgroupcontractoptextractview
 WHERE planID = 'MNS0301833';
 
