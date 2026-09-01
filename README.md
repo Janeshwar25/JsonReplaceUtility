@@ -1,3 +1,10 @@
+SELECT @@group_concat_max_len AS max_len,
+       LENGTH(@sql) AS sql_length;
+
+
+
+
+
 SELECT GROUP_CONCAT(
     CONCAT(
         'SELECT ''', TABLE_NAME, ''' AS sourceTable, ',
