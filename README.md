@@ -1,3 +1,11 @@
+SELECT TABLE_NAME, COLUMN_NAME
+FROM information_schema.COLUMNS
+WHERE TABLE_SCHEMA = 'rso_01'
+  AND COLUMN_NAME IN ('planID', 'memGroupID')
+ORDER BY TABLE_NAME, COLUMN_NAME;
+
+
+
 SELECT DISTINCT memGroupID, planID
 FROM membergroup.memgroupcontractplanoption
 WHERE planID LIKE '%MNS0301833%';
