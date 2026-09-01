@@ -1,3 +1,13 @@
+SELECT DISTINCT
+    memGroupID,
+    planID
+FROM membergroup.memgroupcontractplanoption
+WHERE planID = 'MNS0301833';
+
+
+
+
+
 SELECT TABLE_NAME
 FROM information_schema.COLUMNS
 WHERE TABLE_SCHEMA = 'membergroup'
