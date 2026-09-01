@@ -1,3 +1,10 @@
+SELECT planID, planName, allStateInd
+FROM rso_01.benefitplan
+WHERE planID = 'MNS0301833';
+
+
+
+
 
 SELECT DISTINCT planID
 FROM membergroup.memgroupcontractplanoption
