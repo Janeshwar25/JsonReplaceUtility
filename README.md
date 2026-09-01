@@ -1,3 +1,15 @@
+SELECT
+    memGroupID,
+    memGroupName,
+    createDateTime,
+    createUserID
+FROM membergroup.memgroup
+WHERE memGroupName LIKE '%INSTALLONLY%'
+ORDER BY createDateTime DESC;
+
+
+
+
 
 SELECT *
 FROM membergroup.memgroup
