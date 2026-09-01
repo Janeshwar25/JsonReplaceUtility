@@ -1,3 +1,7 @@
+
+DESCRIBE membergroup.memgroupcontractplanoption;
+
+
 SELECT planID, planName, allStateInd
 FROM rso_01.benefitplan
 WHERE planID = 'MNS0301833';
