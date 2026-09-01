@@ -1,3 +1,9 @@
+SELECT DISTINCT planID
+FROM membergroup.memgroupcontractplanoption
+WHERE planID LIKE '%MNS0301833%';
+
+
+
 
 DESCRIBE membergroup.memgroupcontractplanoption;
 
