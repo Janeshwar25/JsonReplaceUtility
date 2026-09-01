@@ -1,5 +1,12 @@
 SELECT *
 FROM membergroup.memgroup
+WHERE memGroupName LIKE '%INSTALLONLY%'
+  AND DATE(creationDate) = '2026-07-01';
+
+
+
+SELECT *
+FROM membergroup.memgroup
 WHERE memGroupName LIKE '%INSTALLONLY%';
 
 
