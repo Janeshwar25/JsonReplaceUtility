@@ -1,68 +1,57 @@
-TABLE_NAME	COLUMN_NAME
-beneauditdetail	planID
-benebundleoptriderplanassignvw	planID
-benebundleriderplansettingsvw	planID
-benefactorschedplan	planID
-benefitbundleccbypassgroupview	planID
-benefitbundleccbypassplan	planID
-benefitbundleccbypassplanview	planID
-benefitbundleccdedgroupview	planID
-benefitbundleccdedplan	planID
-benefitbundleccdedplanview	planID
-benefitbundleccmaxgroupview	planID
-benefitbundleccmaxplan	planID
-benefitbundleccmaxplanview	planID
-benefitbundleccoopgroupview	planID
-benefitbundleccoopplan	planID
-benefitbundleccoopplanview	planID
-benefitbundleoptbenecocview	planID
-benefitbundleoptionplanview	planID
-benefitbundleoptionriderplanvw	planID
-benefitbundleoptionsearchview	planID
-benefitbundleoptplanassignedvw	planID
-benefitbundleoptriderplancdvw	planID
-benefitbundleplan	planID
-benefitbundleplansearchview	planID
-benefitbundleriderplan	planID
-benefitfactoruplderror	planID
-benefitfactorupldstage	planID
-benefitplan	memGroupID
-benefitplan	planID
-benefitplanaccumbypassview	planID
-benefitplanarchive	planID
-benefitplancoinsview	planID
-benefitplancopayview	planID
-benefitplancssetoverrideview	planID
-benefitplandeductibleview	planID
-benefitplanextractviewv4	planID
-benefitplanmaxview	planID
-benefitplanoverrideview	planID
-benefitplansearchview	memGroupID
-benefitplansearchview	planID
-benefitplanstoplossoopview	planID
-benefitproductoprxextvw	planID
-benefittiernetworkview	planID
-beneplanmassversion	planID
-beneplansettingsbeneplanview	planID
-beneplantierview	planID
-benetiernetworkprovview	planID
-bundleoptionmassupdateview	planID
-bundleoptionmatchview	planID
-bundleoptionmatchvw	planID
-bundleoptionplanview	planID
-capadj	memGroupID
-capadj	planID
-caprunattribset	memGroupID
-caprunattribset	planID
-caprunmem	memGroupID
-caprunmem	planID
-caprunmemdetailcapview	memGroupID
-caprunmemdetailcapview	planID
-carrierlineofbusinessplanview	planID
-carrierlobplan	planID
-carrierlobplanooncarrierlobvw	planID
-claimcapdeduct	memGroupID
-claimcapdeduct	planID
+SELECT 'benefitplan' AS sourceTable, memGroupID, planID
+FROM rso_01.benefitplan
+WHERE planID = 'MNS0301833'
+
+UNION ALL
+
+SELECT 'benefitplansearchview', memGroupID, planID
+FROM rso_01.benefitplansearchview
+WHERE planID = 'MNS0301833'
+
+UNION ALL
+
+SELECT 'capadj', memGroupID, planID
+FROM rso_01.capadj
+WHERE planID = 'MNS0301833'
+
+UNION ALL
+
+SELECT 'caprunattribset', memGroupID, planID
+FROM rso_01.caprunattribset
+WHERE planID = 'MNS0301833'
+
+UNION ALL
+
+SELECT 'caprunmem', memGroupID, planID
+FROM rso_01.caprunmem
+WHERE planID = 'MNS0301833'
+
+UNION ALL
+
+SELECT 'claimcapdeduct', memGroupID, planID
+FROM rso_01.claimcapdeduct
+WHERE planID = 'MNS0301833'
+
+UNION ALL
+
+SELECT 'memacctchangelog', memGroupID, planID
+FROM rso_01.memacctchangelog
+WHERE planID = 'MNS0301833'
+
+UNION ALL
+
+SELECT 'memacctchangelogfp', memGroupID, planID
+FROM rso_01.memacctchangelogfp
+WHERE planID = 'MNS0301833';
+
+
+
+
+
+
+
+
+
 claimeditsummary	memGroupID
 claimqueueglobalview	memGroupID
 contractmgschedmembergroup	memGroupID
