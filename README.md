@@ -1,4 +1,18 @@
 
+SELECT
+    TABLE_NAME,
+    COLUMN_NAME
+FROM information_schema.COLUMNS
+WHERE TABLE_SCHEMA = 'rso_01'
+  AND (
+       COLUMN_NAME LIKE '%contract%'
+       OR COLUMN_NAME LIKE '%memGroup%'
+       OR COLUMN_NAME LIKE '%plan%'
+  )
+ORDER BY TABLE_NAME, COLUMN_NAME;
+
+
+
 TABLE_NAME
 benefitplan
 benefitplansearchview
