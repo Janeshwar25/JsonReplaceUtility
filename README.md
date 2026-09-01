@@ -1,3 +1,8 @@
+SELECT *
+FROM membergroup.memgroup
+WHERE memGroupName LIKE '%INSTALLONLY%';
+
+
 SELECT DISTINCT
     memGroupID,
     planID
