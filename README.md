@@ -1,3 +1,19 @@
+SELECT
+    zip,
+    city,
+    countyName,
+    countyFIPS,
+    state,
+    stateName
+FROM rso_01.zipcode
+WHERE state = 'CA'
+ORDER BY zip;
+
+
+
+
+
+
 SET SESSION group_concat_max_len = 10000000;
 
 SELECT @@group_concat_max_len;
