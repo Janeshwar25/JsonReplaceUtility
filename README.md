@@ -1,43 +1,44 @@
 @echo off
 setlocal
 
-REM Go to JsonReplaceUtility folder
+echo ========================================
+echo JSON REPLACE UTILITY TEST
+echo ========================================
+
+echo Current folder:
+cd
+echo.
+
+echo Moving to utility folder...
 cd /d "%~dp0"
 
-echo ========================================
-echo JsonReplaceUtility Started
-echo Date: %date%
-echo Time: %time%
-echo Folder: %CD%
-echo ========================================
-
-REM Run Python utility
-python "%~dp0replace_json.py" %*
-
-set "EXITCODE=%ERRORLEVEL%"
-
+echo Now folder is:
+cd
 echo.
-echo Python Exit Code: %EXITCODE%
 
-REM Check whether updated.json was generated
-if exist "%~dp0updated.json" (
-    echo updated.json found.
+echo Checking Python...
+python --version
+echo Python error code: %ERRORLEVEL%
+echo.
 
-    copy /Y "%~dp0updated.json" "C:\Users\jchowdha\ACCELQAgent_1\Agents\instances\agent\user_data\updated.json"
-
-    if errorlevel 1 (
-        echo FAILED - Could not copy updated.json
-        set "EXITCODE=1"
-    ) else (
-        echo SUCCESS - updated.json copied successfully.
-    )
+echo Checking replace_json.py...
+if exist "%~dp0replace_json.py" (
+    echo replace_json.py FOUND
 ) else (
-    echo FAILED - updated.json was NOT generated.
-    set "EXITCODE=1"
+    echo ERROR: replace_json.py NOT FOUND
 )
 
 echo.
-echo Final Exit Code: %EXITCODE%
+echo ========================================
+echo Starting Python utility...
 echo ========================================
 
-endlocal & exit /b %EXITCODE%
+python "%~dp0replace_json.py" %*
+
+echo.
+echo ========================================
+echo Python finished.
+echo Exit Code: %ERRORLEVEL%
+echo ========================================
+
+pause
