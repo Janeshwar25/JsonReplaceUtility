@@ -1,13 +1,6 @@
-@echo off
-setlocal
+cd /Users/janeshwarchowdhary/Desktop/f
+python3 -m uvicorn app.routes:app --host 127.0.0.1 --port 8000 --reload
 
-cd /d "%~dp0"
 
-echo Starting Validator API on port 5001...
-echo.
-
-python validator_api.py
-
-echo.
-echo Validator API stopped.
-pause
+cd /Users/janeshwarchowdhary/Desktop/f
+PYTHONPATH=. streamlit run app/app.py
