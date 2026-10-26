@@ -1,1 +1,1 @@
-Get-ChildItem "C:\Users\jchowdha\Desktop" -Recurse -File -Filter "*activemq*.jar" -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName
+Hi Vandana, just wanted to check with you regarding Apurva’s latest email about the Accumulator Hub project. As we discussed earlier, this project wasn’t part of our team’s roadmap, so I’m a bit unsure why I’m still being included in the allocations. Could you please have a look and let me know how I should proceed?
