@@ -1,12 +1,1 @@
-
-Get-ChildItem -File -Filter "*plactivemq-all-5.17.0.jar" -Recurse
-
-
-
-Get-ChildItem -File -Filter "*plactivemq-all-5.17.0.jar" -Recurse | Remove-Item -Force
-
-
-
-Get-ChildItem -File -Filter "*plactivemq-all-5.17.0.jar" -Recurse
-
-
+Get-ChildItem "C:\Users\jchowdha\Desktop\Accelq_Janesh\ACCELQAgent\AgentInstances" -Filter "*plactivemq-all-5.17.0.jar" -Recurse -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName
