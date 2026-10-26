@@ -1,1 +1,1 @@
-Get-ChildItem "C:\Users\jchowdha\Desktop\Accelq_Janesh\ACCELQAgent\AgentInstances\agent\libs\3_p" -File | Select-Object Name
+Get-ChildItem "C:\Users\jchowdha\Desktop\Accelq_Janesh\ACCELQAgent" -Recurse -File -Filter "*plactivemq*.jar" -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName
