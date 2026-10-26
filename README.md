@@ -1,1 +1,1 @@
-Get-ChildItem "C:\Users\jchowdha\Desktop\Accelq_Janesh\ACCELQAgent" -Recurse -File -ErrorAction SilentlyContinue | Where-Object { $_.Name -match "activemq" } | Select-Object -ExpandProperty FullName
+Get-ChildItem "C:\Users\jchowdha\Desktop\Accelq_Janesh\ACCELQAgent\AgentInstances\agent\libs\3_p" -File | Select-Object Name
