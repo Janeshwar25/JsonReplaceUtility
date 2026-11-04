@@ -1,49 +1,35 @@
+Hi Team,
 
-@echo off
-setlocal
-cd /d "%~dp0"
+I have created an AI-powered agent on Microsoft Copilot that can help you generate MySQL queries using simple, natural-language instructions.
 
-REM Keep project root importable for Python
-set "PYTHONPATH=%~dp0;%PYTHONPATH%"
+The agent has been configured with the database schemas, allowing it to understand the database structure and generate queries based on your requirements.
 
-REM Run the existing JSON utility
-python "%~dp0replace_json.py" %*
-set "EXITCODE=%ERRORLEVEL%"
+How to use the agent:
 
-echo.
-if not "%EXITCODE%"=="0" (
-    echo FAILED - Utility exit code %EXITCODE%.
-    endlocal & exit /b %EXITCODE%
-)
+1. Open the shared Microsoft Copilot agent.
+2. Describe your requirement in normal human language (just like you would explain it to a colleague).
+3. The agent will generate the corresponding MySQL query.
+4. Copy the generated query and execute it in DBeaver to fetch the required data.
 
-echo SUCCESS - Utility completed.
+A few examples of what you can ask:
 
-REM Copy generated JSON to ACCELQ agent user_data
-set "SOURCE=%~dp0output\updated.json"
-set "TARGET=C:\Users\jchowdha\ACCELQAgent_1\AgentInstances\agent\user_data\updated.json"
+- Fetch all members of a particular group: You can ask the agent to retrieve all members belonging to a specific group, including their first name, last name, and other available member details.
+- Fetch External IDs: You can ask for External IDs associated with a particular Medical Plan.
+- Custom data requirements: You can describe any specific data-fetching requirement in plain English, and the agent will generate the corresponding SQL query based on the available database schemas.
 
-if not exist "%SOURCE%" (
-    echo ERROR - Generated JSON not found: "%SOURCE%"
-    endlocal & exit /b 1
-)
+Testing & Validation:
 
-if not exist "%TARGET%" (
-    echo ERROR - ACCELQ destination file not found: "%TARGET%"
-    endlocal & exit /b 1
-)
+I have already tested the agent with multiple scenarios, including member details, group-specific member data, and Medical Plan-related External IDs. So far, it has generated the expected queries for the scenarios I tested.
 
-copy /Y "%SOURCE%" "%TARGET%" >nul
-if errorlevel 1 (
-    echo ERROR - Failed to copy JSON to ACCELQ.
-    endlocal & exit /b 1
-)
+I would encourage everyone to try it out with their own use cases and validate the generated queries against the expected results in DBeaver.
 
-fc /b "%SOURCE%" "%TARGET%" >nul
-if errorlevel 1 (
-    echo ERROR - JSON copy verification failed.
-    endlocal & exit /b 1
-)
+Please test different scenarios, including complex joins and specific data requirements. If you encounter any incorrect queries, missing fields, or unexpected results, please share them with me so I can review and improve the agent further.
 
-echo SUCCESS - Latest JSON copied and verified in ACCELQ user_data.
-echo.
-endlocal & exit /b 0
+The goal is to make database querying easier and reduce the time spent manually exploring schemas and writing SQL queries.
+
+Agent Link: [Insert Microsoft Copilot Agent Link]
+
+Looking forward to your feedback!
+
+Thanks,
+[Your Name]
