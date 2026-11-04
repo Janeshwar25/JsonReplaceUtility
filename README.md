@@ -1,3 +1,7 @@
+Introducing AI-Powered MySQL Query Generator – Microsoft Copilot Agent
+
+
+
 Hi Team,
 
 I have created an AI-powered agent on Microsoft Copilot that can help you generate MySQL queries using simple, natural-language instructions.
