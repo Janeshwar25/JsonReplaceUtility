@@ -1,17 +1,9 @@
-A Little Sneak Peek Before the Big 
-Hi Everyone,
+Hi Birendra, hope you're doing well!
 
-First of all, wishing you all a very Happy Diwali! 🪔✨ Hope you all had a wonderful time celebrating with your loved ones.
+I wanted to check with you regarding the RTO requirement for December. Due to my wedding and the related arrangements, I may not be able to follow the RTO requirement during December, so I have raised an exception request through the portal.
 
-I thought this would be a lovely time to share a little personal update with my favourite team! 😊
+I wanted to check if the approval for this exception falls under you, or if I need to get it approved by someone else. I plan to resume following the RTO requirements from January onwards.
 
-As some of you already know, I'm getting married on 7th December! ❤️
+I've kept Vandana in the loop as well.
 
-Before the big day arrives, I wanted to share a few pictures of me and my fiancée from one of our recent trips. Just a little sneak peek into some lovely memories we've made together! 😄
-
-I'll be sharing the formal wedding invitation with all of you very soon as well. Would love to have you all be a part of this special celebration!
-
-Until then, sharing a few happy memories with you all!
-
-Warm regards,
-Yogesh
+Could you please guide me on this? Thanks for your help!
